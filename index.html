@@ -1,0 +1,30 @@
+<html>
+   <head>
+    <title>百度一下</title>
+	<style type="text/css">
+	 .gray{color:red}
+    </style>
+	<script type="text/javascript">
+	  function clearName(){
+		  document.getElementById("userName").value="";
+	  }
+	  function checkName(){
+		  var name= document.getElementById("userName").value;
+		  if(name.length>6||name.length<12){
+				alert("出错啦！");
+		  }
+	  }
+
+        
+    </script>
+   </head>
+   <body>
+    <form>
+     <table border="2px" width="500px" height="400px" align="center" cellspacing="0">
+      <tr><td width="100px"height="50px"> 用户名：</td><td><input type="text" value="用户名必须6——10位" class="gray" onfocus="clearName()" id="userName" onblur="checkName()" /></td></tr>
+      <tr><td>我要留言：</td><td><textarea cols="40" rows="10"></textarea></td></tr>
+      <tr><td height="50px"><input type="submit" value="提交"/></td><td align="center"><input type="reset" value="重置"/></td></tr>
+     </table>
+    </form>
+   </body>
+</html>
